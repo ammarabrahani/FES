@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&display=swap");
+.ctn-preloader {
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  height: 100%;
+  justify-content: center;
+  -webkit-justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  background: #fff;
+}
+.ctn-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+}
+.ctn-preloader .animation-preloader .icon {
+  display: inline-block;
+  position: relative;
+}
+.ctn-preloader .animation-preloader .icon img {
+  animation: rotated 12s infinite linear;
+}
+.ctn-preloader .animation-preloader .txt-loading {
+  user-select: none;
+}
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  animation: letters-loading 4s infinite;
+  color: var(--prime-ten);
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  top: 0;
+  line-height: 30px;
+  position: absolute;
+}
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  font-family: "Recoleta";
+  font-weight: 700;
+  letter-spacing: 12px;
+  display: inline-block;
+  color: rgb(255 50 148 / 20%);
+  position: relative;
+  font-size: 35px;
+  line-height: 30px;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(6):before {
+  animation-delay: 1s;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(8):before {
+  animation-delay: 1.4s;
+}
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+body {
+  font-family: "Domine", serif;
+  font-weight: normal;
+  font-size: 16px;
+  position: relative;
+  overflow-x: hidden;
+}
+.signin_btn {
+  border: 1px solid var(--prime-one);
+  padding: 20px;
+  color: var(--prime-one);
+  border-radius: 30px;
+}
+.hero_banner {
+  background: #1a1a1a;
+  color: #fff;
+}
+:root {
+  --prime-nine: #ff1292;
+  --prime-one: #ffed4e;
+  --prime-two: #00ffff;
+  --prime-three: #ff67d4;
+  --prime-four: #f6f6f6;
+}
+.element {
+  background-color: var(--prime-nine);
+  color: var(--prime-one);
+  color: var(--prime-two);
+  background-color: var(--prime-three);
+  background-color: var(--prime-four);
+}
+.hero_banner .sales {
+  font-size: 5rem;
+}
+.hero_banner .demo-btn {
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  color: var(--prime-one);
+  line-height: 40px;
+  border: 2px solid var(--prime-one);
+  border-radius: 30px;
+  padding: 12px 29px;
+}
+.hero_banner .sub-text {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.72em;
+}
+.hero_banner .main_image {
+  border-radius: 0 0 150px 150px;
+  transition: transform 0.3s ease;
+}
+.hero_banner .main_image:hover {
+  transform: translateY(-10px);
+}
+.hero_banner .banner_image {
+  border-radius: 200px 200px 0 0;
+  transition: transform 0.3s ease;
+}
+.hero_banner .banner_image:hover {
+  transform: translateY(-10px);
+}
+.hero_banner .box_image {
+  border-radius: 150px;
+  transition: transform 0.3s ease;
+}
+.hero_banner .box_image:hover {
+  transform: translateY(-10px);
+}
+.navbar_color {
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.partner_section {
+  color: #000;
+  background: #e3ff75;
+  transform: rotate(0.65deg);
+  padding: 17px 0;
+  text-align: center;
+}
+.partner_section .slick-track {
+  display: flex !important;
+  align-items: center !important;
+}
+.partner_section .slick-next,
+.partner_section .slick-prev {
+  display: none !important;
+}
+
+.bussiness {
+  font-size: 3.75rem;
+}
+
+.ceo ::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 29px;
+  left: 38%;
+  bottom: 43px;
+
+  background-color: #000;
+}
+
+.feature .blog {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  flex-wrap: wrap;
+}
+.text_font {
+  font-size: 22px;
+}
+.marketing {
+  font-size: 45px;
+}
+.illustration {
+  position: relative;
+}
+.illustration::before {
+  content: "";
+  position: absolute;
+  width: 92%;
+  left: 0;
+  top: 105px;
+  bottom: 0;
+  border-top: 4px solid #000;
+  border-right: 6px solid #000;
+  border-radius: 0 20px 0 0;
+  z-index: -1;
+}
+.enterprise {
+  background-color: #000;
+}
+.enterprise_feature {
+  background: linear-gradient(to bottom, white -49%, black 100%);
+}
+.enterprise_feature .client {
+  font-size: 45px;
+}
+.enterprise .sucess {
+  position: absolute;
+  top: -35%;
+}
+.enterprise .great_sucess {
+  color: #fff;
+  font-size: 42px;
+}
+.enterprise .feedback {
+  border-radius: 300px 0 0 300px;
+}
+.enterprise .assure {
+  position: absolute;
+  left: 0;
+  bottom: -6%;
+  width: 330px;
+  border-radius: 0 0 250px;
+}
+.enterprise .customer_data {
+  width: 200px;
+  height: 210px;
+  background: #cfff69;
+  position: absolute;
+  right: 20px;
+  bottom: -90px;
+}
+.customers {
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
+
+.faq-body .faq-row .row-title {
+  font-weight: 600;
+  color: #000;
+  padding: 30px 45px 30px 40px !important;
+  transition: 0.2s ease-in-out;
+}
+
+.row-content .row-content-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background: #0f0f0f;
+}
+
+.reviews .slick-prev {
+  top: -45px !important;
+  height: 45px !important;
+  width: 45px !important;
+  left: auto !important;
+  right: 45px !important;
+  border: 1px solid #000 !important;
+}
+.reviews .slick-prev:before {
+  content: url(../src//assest//left_arrow.png) !important;
+  font-size: 15px !important;
+  line-height: 3 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.reviews .slick-next::before {
+  content: url(../src//assest//arrow.png) !important;
+}
+.reviews .slick-next {
+  top: -45px !important;
+  right: 0 !important;
+  height: 45px !important;
+  width: 45px !important;
+  border: 1px solid #000 !important;
+}
+.client {
+  font-size: 40px;
+}
+
+.enterprise .list li a {
+  color: rgba(255, 255, 255, 0.9);
+}
+.form-widget {
+  border: 2px solid #fff;
+  padding: 20px 50px;
+}
+.form-widget input {
+  background: 0;
+}
+.form-widget input:focus {
+  outline: none;
+}
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card_para {
+  font-size: 28px;
+}
+
+.feature .slick-dots {
+  bottom: -64px !important;
+}
+.blog .sales {
+  font-size: 4.5rem;
+}
+
+.Mui-selected {
+  color: var(--prime-nine) !important;
+}
+.active {
+  font-weight: bold; /* Add your preferred styling here */
+  color: blue;
+}
+.read {
+  padding: 15px;
+  width: 200px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+/* .banner_section {
+  background-image: url(../src//assest//ad-bg.jpg);
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.banner_section .banner_content {
+  background: rgba(255, 255, 255, 0.9);
+} */
+.sidebar-banner-add {
+  background-image: url(../src//assest//ad-bg.jpg); /* Set the background image */
+  background-size: cover; /* Adjust background image size as needed */
+  background-position: center; /* Center the background image */
+  text-align: center; /* Center-align the text within the container */
+  color: #000; /* Text color */
+}
+
+.banner-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+}
+
+.download {
+  display: inline-block;
+  margin-top: 10px; /* Adjust the top margin as needed */
+  text-decoration: none;
+  background-color: var(--prime-nine); /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 5px; /* Button rounded corners */
+  transition: background-color 0.3s; /* Add a smooth transition for hover effect */
+}
+
+.banner-content a:hover {
+  background-color: #e64d00; /* Change the background color on hover */
+}
+
+.MuiPagination-text {
+  font-size: 30px;
+}
+.form_container {
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+@media screen and (max-width: 500px) {
+  .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hero_banner .sales {
+    font-size: 24px !important;
+  }
+  .blog .sales {
+    font-size: 24px !important;
+  }
+  .hero_banner .demo-btn {
+    font-size: 16px;
+  }
+  .hero_banner .demo-btn {
+    padding: 0 17px;
+  }
+  .marketing {
+    font-size: 18px;
+  }
+  .text_font {
+    font-size: 16px;
+  }
+  .faq-body .faq-row .row-title {
+    padding: 0 !important;
+    font-size: 18px !important;
+  }
+  .row-content .row-content-text {
+    padding: 17px !important;
+    font-size: 16px !important;
+  }
+  .form-widget {
+    padding: 20px 12px !important;
+  }
+  .enterprise .great_sucess {
+    font-size: 20px !important;
+  }
+  .client {
+    font-size: 24px;
+  }
+  .enterprise_feature .client {
+    font-size: 24px;
+  }
+  .responsive_card {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+  .card_para {
+    font-size: 20px;
+  }
+  /* .signin_btn {
+    padding: 0;
+    border: 0;
+  } */
+  .illustration::before {
+    top: -2%;
+  }
+  .feature .blog {
+    justify-content: center !important;
+  }
+  .read {
+    padding: 3px;
+    font-size: 16px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bussiness {
+    font-size: 2.5rem;
+  }
+  .hero_banner .sales {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bussiness span {
+    display: inline;
+  }
+  .signin_btn {
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (max-width: 998px) {
+  .enterprise .great {
+    justify-content: center;
+  }
+  .enterprise .sucess {
+    position: initial;
+  }
+  .enterprise .customer_data {
+    width: 140px;
+    height: 140px;
+  }
+  .enterprise .great_sucess {
+    margin: 20px 0;
+  }
+  .blog .sales {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .enterprise .great_sucess {
+    font-size: 32px;
+  }
+  .enterprise .sucess {
+    left: 0;
+  }
+  .customers {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .enterprise .assure {
+    width: 200px;
+  }
+  .responsive_card {
+    padding: 40px 24px 35px !important;
+    margin: 0 9px;
+  }
+}
